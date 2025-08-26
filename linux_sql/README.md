@@ -32,10 +32,6 @@ crontab -e
 
 The project follows a **client-server architecture** with three main components. The system consists of three Linux hosts acting as monitoring agents that collect hardware info and usage metrics, a centralized PostgreSQL database hosted in a Docker container to store and manage all collected data, and a cron-based scheduler to automate usage tracking at regular intervals.
 
----
-
-## Implementation
-
 - The `host_info.sh` script runs once to collect static system information (e.g., CPU cores, disk size, total memory) and stores it in the `host_info` table.
 - The `host_usage.sh` script runs periodically via `crontab` to capture dynamic metrics (e.g., CPU usage, free memory, disk I/O) and inserts them into the `host_usage` table.
 - The PostgreSQL database acts as a centralized repository, enabling analytics through `ddl.sql`.
