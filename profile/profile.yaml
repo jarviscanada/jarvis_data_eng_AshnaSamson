@@ -1,0 +1,147 @@
+# Preferred name (Characters only)
+name: "Ashna Samson"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: Motivated Computer Science undergraduate specializing in Software Engineering with a strong foundation in software development, AI model optimization, and UX/UI design. Proficient in Java, Linux, SQL, Python, Git, cloud technologies, and collaborative engineering practices applying agile methodologies. Experienced in developing user-centered applications, delivering high-quality code, and managing technical projects. Holds multiple professional certifications and completed advanced academic projects showcasing strong technical capabilities.
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - Linux/Bash
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git
+    - MATLAB
+    - R/RStudio
+    - C
+    - Python
+    - Figma
+    - Adobe XD
+    - draw.io
+    - Verilog
+    - RISC-V
+    - Assembly
+    - Arduino
+  # At least 5 skills
+  competent:
+    - Docker
+    - Junit
+    - Eclipse
+    - Google Cloud Platform
+    - Azure
+    - Kubernates
+    - JavaScript
+    - HTML
+    - CSS
+    - React.js
+    - Node.js
+    - Gradle      
+  # At least 5 skills
+  familiar:
+    - PostgreSQL
+    - PowerBI
+    - MongoDB
+    - AWS
+    - Photoshop
+    - REST APIs
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Linux Cluster Monitoring Agent"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson/tree/develop/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The projLinux Cluster Monitoring Agentect description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed a monitoring agent to collect and analyze hardware specifications and real-time resource usage across multiple Linux nodes. Automated data collection and storage in a RDBMS PostgreSQL database using Bash scripts, Docker containers, and crontab for scheduled tracking. (Bash, PostgreSQL, Docker, Git, Crontab)
+  
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "RIMA  Recipe & Ingredient Management App"
+    #URL is optional
+    git_url: "https://github.com/samson-ashna/RIMA-Recipe-Management-App"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed a recipe management prototype with ingredient-based search and browse recipes. Designed UI for a user authentication flow, registration module, and personalized dashboard functionality.(Java, SQL, GitHub)
+  - name: "SmartShoppers: E-commerce Platform"
+    git_url: "https://github.com/samson-ashna/SmartShoppers"
+    description: Programmed an online platform with several design patterns for shoppers and sellers to browse and effortlessly purchase at their convenience. Designed UI for authentication, registration, and user dashboard.(Java, Swing, JUnit, Eclipse, GitHub)
+  - name: "MelodiaMatrix: Capacitive Piano with LED Matrix"
+    git_url: "https://github.com/samson-ashna/MelodiaMatrix_Capacitive-Piano-with-LED-Matrix"
+    description: Created a capacitive piano prototype integrating tone generation, the Arduino Due microcontroller, and LED animations based on user input. Enhanced user interaction by synchronizing audio output with dynamic LED visual feedback.(C, Arduino Due, Arduino IDE, GitHub) 
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Data Engineer"
+    company: "Jarvis"
+    duration: "July 2025-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Developing and deploying industry-level projects using Agile/Scrum methodologies, focusing on scalable data solutions and efficient project delivery."
+  - title: "Software Engineer: AI Training Data"
+    company: "Outlier.ai - Remote"
+    duration: "May 2024-present"
+    description: "Develop and optimize AI training data pipelines to enhance model accuracy, data quality, and user experience."
+  - title: "Software Programming Instructor"
+    company: "SV Robotics Academy - Remote"
+    duration: "July 2021-Mar 2022"
+    description: "Designed and delivered project-based courses on robotics and programming using Python, C, MATLAB, and Java. Increased student engagement by 80% through interactive lessons, live demos, and practical coding exercises."
+  - title: "UX/UI Graphic Designer Intern"
+    company: "Tweebaa Inc. - Remote"
+    duration: "Mar 2022-June 2022"
+    description: "Translated user research into actionable design solutions, improving product usability. Created wireframes, mockups, and journey maps to iterate on product concepts using Figma and CAD tools."
+  - title: "Assistant Centre Manager & Math Instructor"
+    company: "Mathnasium  The Math Learning Centre"
+    duration: "Sept 2020-present"
+    description: "Managed daily operations, payroll, scheduling, and mentoring staff while ensuring high client satisfaction. Designed personalized learning plans, leveraging analytics to improve student performance. Utilized tools such as QuickBooks, Google Suite, Radius, and MS Office to streamline operations."
+#List of edcuation
+education: 
+  - school_name: "York University - Lassonde School of Engineering"
+    duration: "2018-2024"
+    degree: "Bachelor of Science"
+    department: "Computer Science -  Focus in Software Engineering"
+    awards_achievements:  
+    - "User Interfaces"
+    - "Software Design"
+    - "Software Engineering Requirements"
+    - "Embedded Systems"
+    - "Signals"
+    - "Algorithms"
+    - "Data Structures"
+    - "Operating Systems"
+    - "Digital Logic"
+    - "Control Systems"
+    - "Systems Refinement"
+  - school_name: "Notre Dame Catholic Secondary School"
+    duration: "2014-2018"
+    degree: "High School Diploma"
+    department: "None"
+    awards_achievements: 
+    - Honour Roll graduate with over 90% overall
+    - Recipient of OSSD & FSL Diploma, French & Math Award
+
+#Optional section
+others:
+    #category
+  - title: "Certificates"
+    #list of items
+    bullets:
+      - "IBM DevOps and Software Engineering Specialization - Coursera - [June 2023]"
+      - "IBM DevOps, Cloud, and Agile Foundations Specialization - Coursera - [May 2023]"
+      - "UX/ UI Design: Google UX Design Specialization - Coursera - [May 2023]"      
+      - "Front End Development: Meta Front-End Developer - Coursera - [Nov 2024]"
+      - "Data Engineer Associate [DP-203] - Microsoft - [Enduring]"
+      - "Earned Certification Badges: Credly - https://www.credly.com/users/ashna-samson"
+
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Cooking & Baking"
+      - "Listening to music"
+      - "Video Games"
+      - "Watching Shows/Movies"
+      - "Exploring diverse cuisines"
