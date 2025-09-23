@@ -10,11 +10,11 @@ import java.util.Optional;
 public class PositionDao implements CrudDao<Position, String> {
 
     private final Connection c;
-    private final QuoteDao quoteDao; // to fetch associated Quote
+//    private final QuoteDao quoteDao; // to fetch associated Quote
 
     public PositionDao(Connection c) {
         this.c = c;
-        this.quoteDao = new QuoteDao(c);
+//        this.quoteDao = new QuoteDao(c);
     }
 
     @Override
@@ -93,8 +93,8 @@ public class PositionDao implements CrudDao<Position, String> {
         int shares = rs.getInt("number_of_shares");
         var valuePaid = rs.getDouble("value_paid");
 
-        Quote quote = quoteDao.findById(symbol).orElse(null);
+//        Quote quote = quoteDao.findById(symbol).orElse(null);
 
-        return new Position(symbol, shares, valuePaid, quote);
+        return new Position(symbol, shares, valuePaid);
     }
 }

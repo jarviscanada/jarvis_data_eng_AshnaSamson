@@ -9,7 +9,7 @@ public class Position {
     private double valuePaid;
 //    private Quote quote;
 
-    public Position(String symbol, int numberOfShares, double valuePaid, Quote quote) {
+    public Position(String symbol, int numberOfShares, double valuePaid) {
         this.symbol = symbol;
         this.numberOfShares = numberOfShares;
         this.valuePaid = valuePaid;

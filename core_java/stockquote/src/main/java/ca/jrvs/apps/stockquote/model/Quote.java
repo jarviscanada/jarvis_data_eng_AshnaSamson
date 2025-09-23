@@ -53,6 +53,10 @@ public class Quote {
         this.timestamp = Timestamp.valueOf(LocalDateTime.now());
     }
 
+    public Quote() {
+
+    }
+
     public String getSymbol() { return symbol; }
     public void setSymbol(String symbol) { this.symbol = symbol; }
 

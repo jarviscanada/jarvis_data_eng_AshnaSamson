@@ -48,11 +48,10 @@ public class PositionService {
             Position oldPos = existing.get();
             int updatedShares = oldPos.getNumberOfShares() + numberOfShares;
             double updatedValue = oldPos.getValuePaid() + (numberOfShares * price);
-            newPosition = new Position(ticker, updatedShares, updatedValue, quoteDao.findById(ticker).orElse(null));
+            newPosition = new Position(ticker, updatedShares, updatedValue);
         } else {
             // Create new position
-            newPosition = new Position(ticker, numberOfShares, numberOfShares * price,
-                    quoteDao.findById(ticker).orElse(null));
+            newPosition = new Position(ticker, numberOfShares, numberOfShares * price);
         }
 
         // Save or update in database

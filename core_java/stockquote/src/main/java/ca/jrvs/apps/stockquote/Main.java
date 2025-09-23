@@ -1,10 +1,12 @@
 package ca.jrvs.apps.stockquote;
 
 import ca.jrvs.apps.stockquote.client.QuoteHTTPHelper;
+import ca.jrvs.apps.stockquote.controller.StockQuoteController;
 import ca.jrvs.apps.stockquote.dao.PositionDao;
 import ca.jrvs.apps.stockquote.dao.QuoteDao;
 import ca.jrvs.apps.stockquote.model.Quote;
 import ca.jrvs.apps.stockquote.service.PositionService;
+import ca.jrvs.apps.stockquote.service.QuoteService;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -29,8 +31,11 @@ public class Main {
         QuoteDao quoteDao = new QuoteDao(connection);
         QuoteHTTPHelper quoteClient = new QuoteHTTPHelper(API_KEY);
 
-     //??   PositionService positionService = new PositionService(positionDao, quoteDao, quoteClient);
-     //??   positionService.buy("MSFT");
-     //??   positionService.savePosition("MSFT", 300);
+        PositionService positionService = new PositionService(positionDao, quoteDao, quoteClient);
+        QuoteService quoteService = new QuoteService(quoteDao, quoteClient);
+
+        StockQuoteController stockQuoteController = new StockQuoteController(quoteService, positionService);
+        stockQuoteController.initClient();
+
     }
 }

@@ -11,6 +11,11 @@ public class QuoteService {
     private QuoteDao dao;
     private QuoteHTTPHelper httpHelper;
 
+    public QuoteService (QuoteDao quoteDao, QuoteHTTPHelper httpHelper) {
+        this.dao = quoteDao;
+        this.httpHelper = httpHelper;
+    }
+
     /**
      * Fetches latest quote data from endpoint
      * @param ticker
@@ -20,9 +25,9 @@ public class QuoteService {
         String symbol = ticker;
         String apiKey = "c4ab4d07cemsh83cb82e76e49b53p18cb68jsn7c0c0b0bdb9d";
 
-        QuoteHTTPHelper helper = new QuoteHTTPHelper(apiKey);
         try {
-            Quote quote = helper.fetchQuoteInfo(symbol);
+            Quote quote = httpHelper.fetchQuoteInfo(symbol);
+            dao.save(quote);
             System.out.println(quote);
             if (quote.getSymbol() == null || quote.getSymbol().isEmpty()) {
                 return Optional.empty(); // API response doesn't have existing symbol
@@ -35,11 +40,6 @@ public class QuoteService {
             return Optional.empty();
         }
 
-    }
-
-    public static void main(String[] args){
-        QuoteService service = new QuoteService();
-        service.fetchQuoteDataFromAPI("MSFT");
     }
 
 }

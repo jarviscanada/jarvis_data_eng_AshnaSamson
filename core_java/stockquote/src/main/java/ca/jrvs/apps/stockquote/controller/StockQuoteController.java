@@ -34,8 +34,7 @@ public class StockQuoteController {
             System.out.println("1. View stock quote");
             System.out.println("2. Buy stock");
             System.out.println("3. Sell stock");
-            System.out.println("4. View portfolio");
-            System.out.println("5. Exit");
+            System.out.println("4. Exit");
             System.out.print("Enter choice: ");
 
             String choice = scanner.nextLine().trim();
@@ -76,12 +75,7 @@ public class StockQuoteController {
                         System.out.println("Sold all shares of " + symbol);
                         break;
 
-                    case "4": // View portfolio
-                        System.out.println("----- Your Portfolio -----");
-                        positionService.getAllPositions().forEach(System.out.println);
-                        break;
-
-                    case "5": // Exit
+                    case "4": // Exit
                         running = false;
                         break;
 

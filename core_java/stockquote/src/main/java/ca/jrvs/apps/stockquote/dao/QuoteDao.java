@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public class QuoteDao implements CrudDao<Quote, String> {
 
-    private final Connection c;
+    private Connection c;
 
     public QuoteDao(Connection c) {
         this.c = c;
