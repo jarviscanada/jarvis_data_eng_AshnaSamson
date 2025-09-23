@@ -4,21 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="411ab71d-7191-4617-8720-7cf9d077293e" name="Changes" comment="" />
+    <list default="true" id="411ab71d-7191-4617-8720-7cf9d077293e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/CrudDao.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/client/QuoteHTTPHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/controller/StockQuoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/dao/CrudDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/dao/PositionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/dao/QuoteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/dto/QuoteResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/dto/QuoteResponseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/model/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/model/Quote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/service/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/service/QuoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/util/JsonParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/resources/properties.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/PositionDao_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/PositionService_IntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/PositionService_UnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/QuoteDao_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/QuoteService_IntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/QuoteService_UnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="sortBySeverity" value="false" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="31fc2q4wLr0STlLy7XaZQ2waDjc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,6 +70,8 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/rocky/dev/jarvis_data_eng_AshnaSamson",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -38,13 +81,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.27812.49" />
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.27812.49" />
-      </set>
-    </attachedChunks>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\main\java\ca\jrvs\apps\stockquote\controller" />
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\main\java\ca\jrvs\apps\stockquote\dao" />
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src" />
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\main\java\ca\jrvs\apps\stockquote" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ca.jrvs.apps.stockquote" />
+    </key>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,5 +105,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit untracked (unversioned) files" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit untracked (unversioned) files" />
   </component>
 </project>

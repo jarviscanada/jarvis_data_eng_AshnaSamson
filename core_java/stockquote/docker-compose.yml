@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: jarvis_postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: database
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - jarvis:/var/lib/postgresql/data
+
+volumes:
+  jarvis:
