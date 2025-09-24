@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="411ab71d-7191-4617-8720-7cf9d077293e" name="Changes" comment="project fix">
+    <list default="true" id="411ab71d-7191-4617-8720-7cf9d077293e" name="Changes" comment="implemented service test cases">
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/dao/PositionDao_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/PositionService_UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/PositionService_UnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/dao/PositionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/dao/PositionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/dao/QuoteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/dao/QuoteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/PositionDao_Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/PositionService_IntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/PositionService_IntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/QuoteDao_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/dao/QuoteDao_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/QuoteService_IntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/QuoteService_IntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/target/classes/ca/jrvs/apps/stockquote/dao/PositionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/target/classes/ca/jrvs/apps/stockquote/dao/PositionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/target/classes/ca/jrvs/apps/stockquote/dao/QuoteDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/target/classes/ca/jrvs/apps/stockquote/dao/QuoteDao.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +54,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.PositionDaoTest.executor": "Run",
+    "JUnit.PositionDao_Test.executor": "Run",
+    "JUnit.QuoteDao_Test.executor": "Run",
     "JUnit.QuoteServiceTest.executor": "Run",
     "JUnit.QuoteService_UnitTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -67,12 +79,13 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\test\java\ca\jrvs\apps\stockquote\service" />
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\test\java\ca\jrvs\apps\stockquote\dao" />
       <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\main\java\ca\jrvs\apps\stockquote\controller" />
       <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\main\java\ca\jrvs\apps\stockquote\dao" />
       <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src" />
-      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\main\java\ca\jrvs\apps\stockquote" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ca.jrvs.apps.stockquote.dao" />
       <recent name="ca.jrvs.apps.stockquote.service" />
       <recent name="ca.jrvs.apps.stockquote" />
     </key>
@@ -83,7 +96,7 @@
       <module name="core_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.jrvs.apps.stockquote.*" />
+          <option name="PATTERN" value="ca.jrvs.apps.stockquote.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758597516158</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implemented service test cases">
+      <option name="closed" value="true" />
+      <created>1758606536836</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758606536838</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +153,7 @@
     <MESSAGE value="commit untracked (unversioned) files" />
     <MESSAGE value="project initialization" />
     <MESSAGE value="project fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="project fix" />
+    <MESSAGE value="implemented service test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented service test cases" />
   </component>
 </project>

@@ -17,6 +17,7 @@ public class PositionDao implements CrudDao<Position, String> {
 //        this.quoteDao = new QuoteDao(c);
     }
 
+    //Creates or updates the new position if the symbol does not already exist
     @Override
     public Position save(Position entity) throws IllegalArgumentException {
         String sql = """
@@ -37,6 +38,7 @@ public class PositionDao implements CrudDao<Position, String> {
         }
     }
 
+    // Read by ID and if a row exists, it gets mapped to the Position object
     @Override
     public Optional<Position> findById(String symbol) throws IllegalArgumentException {
         String sql = "SELECT * FROM position WHERE symbol = ?";
@@ -52,6 +54,7 @@ public class PositionDao implements CrudDao<Position, String> {
         }
     }
 
+    // Reads over the resultList and builds a position list
     @Override
     public Iterable<Position> findAll() {
         String sql = "SELECT * FROM position";
@@ -67,6 +70,7 @@ public class PositionDao implements CrudDao<Position, String> {
         return results;
     }
 
+    // deletes one id
     @Override
     public void deleteById(String symbol) throws IllegalArgumentException {
         String sql = "DELETE FROM position WHERE symbol = ?";
@@ -78,6 +82,7 @@ public class PositionDao implements CrudDao<Position, String> {
         }
     }
 
+    // deletes all rows
     @Override
     public void deleteAll() {
         String sql = "DELETE FROM position";
@@ -88,6 +93,7 @@ public class PositionDao implements CrudDao<Position, String> {
         }
     }
 
+    // Converts a row from ResultSet into a Position Java object after reading the rows
     private Position mapRow(ResultSet rs) throws SQLException {
         String symbol = rs.getString("symbol");
         int shares = rs.getInt("number_of_shares");

@@ -9,12 +9,14 @@ import java.util.Optional;
 
 public class QuoteDao implements CrudDao<Quote, String> {
 
+    // Establishes JDBC Connection
     private Connection c;
 
     public QuoteDao(Connection c) {
         this.c = c;
     }
 
+    // inserts (if there isn't a conflict) or updates rows with all the quote's data
     @Override
     public Quote save(Quote entity) throws IllegalArgumentException {
         String sql = """
@@ -54,6 +56,7 @@ public class QuoteDao implements CrudDao<Quote, String> {
         }
     }
 
+    // read a quote by its symbol and maps to a quote object using mapRow
     @Override
     public Optional<Quote> findById(String symbol) throws IllegalArgumentException {
         String sql = "SELECT * FROM quote WHERE symbol = ?";
@@ -69,6 +72,7 @@ public class QuoteDao implements CrudDao<Quote, String> {
         }
     }
 
+    // Loops through each row then maps to a Quote and returns a list
     @Override
     public Iterable<Quote> findAll() {
         String sql = "SELECT * FROM quote";
@@ -84,6 +88,7 @@ public class QuoteDao implements CrudDao<Quote, String> {
         return results;
     }
 
+    // delete one quote with the symbol
     @Override
     public void deleteById(String symbol) throws IllegalArgumentException {
         String sql = "DELETE FROM quote WHERE symbol = ?";
@@ -95,6 +100,7 @@ public class QuoteDao implements CrudDao<Quote, String> {
         }
     }
 
+    // deletes all quotes
     @Override
     public void deleteAll() {
         String sql = "DELETE FROM quote";
@@ -105,6 +111,7 @@ public class QuoteDao implements CrudDao<Quote, String> {
         }
     }
 
+    // Converts a ResultSet row into a Quote object.
     private Quote mapRow(ResultSet rs) throws SQLException {
         return new Quote(
                 rs.getString("symbol"),
