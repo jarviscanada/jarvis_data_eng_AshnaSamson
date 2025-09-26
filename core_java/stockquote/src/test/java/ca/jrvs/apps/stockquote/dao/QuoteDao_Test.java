@@ -24,11 +24,13 @@ public class QuoteDao_Test {
 
     @BeforeAll
     void startContainer() {
+
         postgres.start();
     }
 
     @AfterAll
     void stopContainer() {
+
         postgres.stop();
     }
 
@@ -96,7 +98,6 @@ public class QuoteDao_Test {
 
     @Test
     void testFindAll() {
-        // insert two quotes
         quoteDao.save(new Quote("GOOG", 100.0, 105.0, 95.0, 101.0, 2000,
                 Date.valueOf("2024-09-24"), 99.0, 2.0, "2%", new Timestamp(System.currentTimeMillis())));
         quoteDao.save(new Quote("MSFT", 200.0, 205.0, 195.0, 201.0, 3000,

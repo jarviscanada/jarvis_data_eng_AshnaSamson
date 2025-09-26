@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class QuoteService_IntTest {
 
-    // Spin up Postgres container automatically
+    // start a Postgres container automatically
     @Container
     public static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:15.3")
             .withDatabaseName("stockquote")

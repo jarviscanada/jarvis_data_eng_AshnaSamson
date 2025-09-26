@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="411ab71d-7191-4617-8720-7cf9d077293e" name="Changes" comment="implemented dao unit test cases">
+    <list default="true" id="411ab71d-7191-4617-8720-7cf9d077293e" name="Changes" comment="implemented all test cases including integration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/dao/PositionDao_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/dao/PositionDao_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/dao/QuoteDao_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/dao/QuoteDao_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/PositionService_IntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/PositionService_IntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/PositionService_UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/PositionService_UnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/QuoteService_IntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/QuoteService_IntTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758690641341</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implemented all test cases including integration">
+      <option name="closed" value="true" />
+      <created>1758701241478</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758701241479</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +168,7 @@
     <MESSAGE value="project fix" />
     <MESSAGE value="implemented service test cases" />
     <MESSAGE value="implemented dao unit test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented dao unit test cases" />
+    <MESSAGE value="implemented all test cases including integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented all test cases including integration" />
   </component>
 </project>

@@ -57,7 +57,7 @@ public class PositionService_IntTest {
         }
 
         positionDao = new PositionDao(connection);
-        quoteDao = new QuoteDao(connection); // just to satisfy constructor
+        quoteDao = new QuoteDao(connection);
         positionService = new PositionService(positionDao, quoteDao, new QuoteHTTPHelper("fakeapikey"));
     }
 
@@ -80,9 +80,8 @@ public class PositionService_IntTest {
 
     @Test
     void testBuyUpdatesExistingPosition() {
-        // first buy
+        // first buy then second buy (should add shares and value)
         positionService.buy("AAPL", 10, 150.0);
-        // second buy (should add shares and value)
         Position updated = positionService.buy("AAPL", 5, 200.0);
 
         assertEquals(15, updated.getNumberOfShares());

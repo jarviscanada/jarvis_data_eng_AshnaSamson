@@ -74,7 +74,6 @@ class PositionDao_Test {
         assertEquals(p.getSymbol(), saved.getSymbol());
         assertEquals(p.getNumberOfShares(), saved.getNumberOfShares());
 
-        // Update same symbol
         Position updated = new Position("MSFT", 20, 3000.0);
         Position saved2 = positionDao.save(updated);
         assertEquals(20, saved2.getNumberOfShares());

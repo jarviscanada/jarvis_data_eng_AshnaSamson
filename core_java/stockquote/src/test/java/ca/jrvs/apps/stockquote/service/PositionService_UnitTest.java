@@ -21,7 +21,7 @@ class PositionService_UnitTest {
 
     @BeforeEach
     void setUp() {
-        // use classic mock maker if inline fails (see previous answer)
+        // use classic mock
         positionDao = mock(PositionDao.class);
         quoteDao = mock(QuoteDao.class);
         quoteHTTPHelper = mock(QuoteHTTPHelper.class);
