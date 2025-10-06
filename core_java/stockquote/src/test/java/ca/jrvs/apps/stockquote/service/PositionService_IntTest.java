@@ -4,6 +4,7 @@ import ca.jrvs.apps.stockquote.dao.PositionDao;
 import ca.jrvs.apps.stockquote.dao.QuoteDao;
 import ca.jrvs.apps.stockquote.model.Position;
 import ca.jrvs.apps.stockquote.client.QuoteHTTPHelper;
+import ca.jrvs.apps.stockquote.model.Quote;
 import org.junit.jupiter.api.*;
 import org.testcontainers.containers.PostgreSQLContainer;
 
@@ -54,10 +55,30 @@ public class PositionService_IntTest {
                     "value_paid DOUBLE PRECISION" +
                     ")");
             st.execute("DELETE FROM position");
+
+            st.execute("DROP TABLE IF EXISTS quote CASCADE;;\n" +
+                    "CREATE TABLE quote (\n" +
+                    "    symbol              VARCHAR(10) PRIMARY KEY,\n" +
+                    "    open                DECIMAL(10, 2),\n" +
+                    "    high                DECIMAL(10, 2),\n" +
+                    "    low                 DECIMAL(10, 2),\n" +
+                    "    price               DECIMAL(10, 2) NOT NULL,\n" +
+                    "    volume              INT NOT NULL,\n" +
+                    "    latest_trading_day  DATE,\n" +
+                    "    previous_close      DECIMAL(10, 2),\n" +
+                    "    change              DECIMAL(10, 2),\n" +
+                    "    change_percent      VARCHAR(10),\n" +
+                    "    timestamp           TIMESTAMP DEFAULT CURRENT_TIMESTAMP );");
+            st.execute("DELETE FROM quote");
         }
 
         positionDao = new PositionDao(connection);
         quoteDao = new QuoteDao(connection);
+        Quote quote = new Quote();
+        quote.setPrice(100);
+        quote.setVolume(10000);
+        quote.setSymbol("AAPL");
+        quoteDao.save(quote);
         positionService = new PositionService(positionDao, quoteDao, new QuoteHTTPHelper("fakeapikey"));
     }
 
@@ -68,24 +89,24 @@ public class PositionService_IntTest {
 
     @Test
     void testBuyCreatesNewPosition() {
-        Position p = positionService.buy("AAPL", 10, 150.0);
+        Position p = positionService.buy("AAPL", 10);
         assertEquals("AAPL", p.getSymbol());
         assertEquals(10, p.getNumberOfShares());
-        assertEquals(1500.0, p.getValuePaid());
+        assertEquals(1000.0, p.getValuePaid());
 
         Optional<Position> dbPosition = positionDao.findById("AAPL");
         assertTrue(dbPosition.isPresent());
-        assertEquals(1500.0, dbPosition.get().getValuePaid());
+        assertEquals(1000.0, dbPosition.get().getValuePaid());
     }
 
     @Test
     void testBuyUpdatesExistingPosition() {
         // first buy then second buy (should add shares and value)
-        positionService.buy("AAPL", 10, 150.0);
-        Position updated = positionService.buy("AAPL", 5, 200.0);
+        positionService.buy("AAPL", 10);
+        Position updated = positionService.buy("AAPL", 5);
 
         assertEquals(15, updated.getNumberOfShares());
-        assertEquals(1500.0 + 5 * 200.0, updated.getValuePaid());
+        assertEquals(1000.0 + 5 * 100.0, updated.getValuePaid());
 
         Optional<Position> dbPosition = positionDao.findById("AAPL");
         assertTrue(dbPosition.isPresent());
@@ -94,7 +115,7 @@ public class PositionService_IntTest {
 
     @Test
     void testSellRemovesPosition() {
-        positionService.buy("AAPL", 10, 150.0);
+        positionService.buy("AAPL", 10);
         Optional<Position> beforeSell = positionDao.findById("AAPL");
         assertTrue(beforeSell.isPresent());
 
@@ -110,9 +131,8 @@ public class PositionService_IntTest {
 
     @Test
     void testBuyInvalidArgs() {
-        assertThrows(IllegalArgumentException.class, () -> positionService.buy(null, 10, 100));
-        assertThrows(IllegalArgumentException.class, () -> positionService.buy("", 10, 100));
-        assertThrows(IllegalArgumentException.class, () -> positionService.buy("AAPL", -5, 100));
-        assertThrows(IllegalArgumentException.class, () -> positionService.buy("AAPL", 5, -100));
+        assertThrows(IllegalArgumentException.class, () -> positionService.buy(null, 10));
+        assertThrows(IllegalArgumentException.class, () -> positionService.buy("", 10));
+        assertThrows(IllegalArgumentException.class, () -> positionService.buy("AAPL", -5));
     }
 }

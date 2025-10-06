@@ -62,10 +62,8 @@ public class StockQuoteController {
                         symbol = scanner.nextLine().trim().toUpperCase();
                         System.out.print("Enter quantity to buy: ");
                         int qty = Integer.parseInt(scanner.nextLine().trim());
-                        System.out.print("Enter price per share: ");
-                        double price = Double.parseDouble(scanner.nextLine().trim());
-                        positionService.buy(symbol, qty, price); // service does the logic
-                        System.out.println("Bought " + qty + " shares of " + symbol + " for " + price);
+                        positionService.buy(symbol, qty); // service does the logic
+                        System.out.println("Bought " + qty + " shares of " + symbol);
                         break;
 
                     case "3": // Sell stock

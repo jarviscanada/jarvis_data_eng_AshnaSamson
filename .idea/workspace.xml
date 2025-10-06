@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="411ab71d-7191-4617-8720-7cf9d077293e" name="Changes" comment="implemented all test cases including integration">
+      <change afterPath="$PROJECT_DIR$/core_java/stockquote/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/dao/PositionDao_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/dao/PositionDao_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/dao/QuoteDao_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/dao/QuoteDao_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/controller/StockQuoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/controller/StockQuoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/service/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/service/PositionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/PositionService_IntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/PositionService_IntTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/PositionService_UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/PositionService_UnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/QuoteService_IntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service/QuoteService_IntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/target/classes/ca/jrvs/apps/stockquote/controller/StockQuoteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/target/classes/ca/jrvs/apps/stockquote/controller/StockQuoteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/stockquote/target/classes/ca/jrvs/apps/stockquote/service/PositionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/stockquote/target/classes/ca/jrvs/apps/stockquote/service/PositionService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,23 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "samson-ashna"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson.git",
+    "accountId": "167c9554-dfce-4c26-9b7f-6f61bcfa832a"
+  }
+}]]></component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="Rerun Failed Tests" />
+    </enabled-run-configurations>
+  </component>
   <component name="ProblemsViewState">
     <option name="sortBySeverity" value="false" />
   </component>
@@ -52,12 +72,15 @@
     "JUnit.PositionDaoTest.executor": "Run",
     "JUnit.PositionDao_Test.executor": "Run",
     "JUnit.PositionService_IntTest.executor": "Run",
+    "JUnit.PositionService_IntTest.testBuyInvalidArgs.executor": "Run",
     "JUnit.QuoteDao_Test.executor": "Run",
     "JUnit.QuoteServiceTest.executor": "Run",
     "JUnit.QuoteService_IntTest.executor": "Run",
     "JUnit.QuoteService_UnitTest.executor": "Run",
+    "JUnit.service in core_java.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
@@ -87,7 +110,7 @@
       <recent name="ca.jrvs.apps.stockquote" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PositionService_IntTest.testBuyInvalidArgs">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.stockquote.Main" />
       <module name="core_java" />
@@ -101,8 +124,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PositionService_IntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.stockquote.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.jrvs.apps.stockquote.service" />
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.stockquote.service.PositionService_IntTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositionService_IntTest.testBuyInvalidArgs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.stockquote.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.jrvs.apps.stockquote.service" />
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.stockquote.service.PositionService_IntTest" />
+      <option name="METHOD_NAME" value="testBuyInvalidArgs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="service in core_java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core_java" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PositionService_IntTest.testBuyInvalidArgs" />
+        <item itemvalue="JUnit.PositionService_IntTest" />
+        <item itemvalue="JUnit.service in core_java" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -156,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758701241479</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="implemented all test cases including integration">
+      <option name="closed" value="true" />
+      <created>1758864202153</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1758864202154</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

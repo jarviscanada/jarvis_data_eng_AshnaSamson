@@ -4,6 +4,7 @@ import ca.jrvs.apps.stockquote.dao.PositionDao;
 import ca.jrvs.apps.stockquote.dao.QuoteDao;
 import ca.jrvs.apps.stockquote.model.Position;
 import ca.jrvs.apps.stockquote.client.QuoteHTTPHelper;
+import ca.jrvs.apps.stockquote.model.Quote;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
@@ -32,7 +33,14 @@ class PositionService_UnitTest {
     void buy_createsNewPositionWhenNoneExists() {
         String ticker = "APPL";
         int shares = 10;
-        double price = 300.0;
+        double price = 100.0;
+
+        Quote quote = new Quote();
+        quote.setPrice(100);
+        quote.setVolume(10000);
+
+        // existing quote
+        when(quoteDao.findById(ticker)).thenReturn(Optional.of(quote));
 
         // no existing position
         when(positionDao.findById(ticker)).thenReturn(Optional.empty());
@@ -41,7 +49,7 @@ class PositionService_UnitTest {
         ArgumentCaptor<Position> captor = ArgumentCaptor.forClass(Position.class);
         when(positionDao.save(any(Position.class))).thenAnswer(inv -> inv.getArgument(0));
 
-        Position saved = positionService.buy(ticker, shares, price);
+        Position saved = positionService.buy(ticker, shares);
 
         // verify
         verify(positionDao).findById(ticker);
@@ -61,14 +69,21 @@ class PositionService_UnitTest {
     void buy_updatesExistingPosition() {
         String ticker = "APPL";
         int shares = 5;
-        double price = 200.0;
+        double price = 100.0;
+
+        Quote quote = new Quote();
+        quote.setPrice(100);
+        quote.setVolume(10000);
+
+        // existing quote
+        when(quoteDao.findById(ticker)).thenReturn(Optional.of(quote));
 
         Position existing = new Position(ticker, 10, 2000.0);
         when(positionDao.findById(ticker)).thenReturn(Optional.of(existing));
 
         when(positionDao.save(any(Position.class))).thenAnswer(inv -> inv.getArgument(0));
 
-        Position updated = positionService.buy(ticker, shares, price);
+        Position updated = positionService.buy(ticker, shares);
 
         verify(positionDao).findById(ticker);
         verify(positionDao).save(any(Position.class));
@@ -76,18 +91,18 @@ class PositionService_UnitTest {
         assertEquals(ticker, updated.getSymbol());
         // old 10 + new 5
         assertEquals(15, updated.getNumberOfShares());
-        // old 2000 + (5*200)
-        assertEquals(2000.0 + 1000.0, updated.getValuePaid());
+        // old 2000 + (5*100)
+        assertEquals(2000.0 + 500.0, updated.getValuePaid());
     }
 
     @Test
     void buy_throwsForInvalidInputs() {
         assertThrows(IllegalArgumentException.class,
-                () -> positionService.buy("", 10, 100.0));
+                () -> positionService.buy("", 10));
         assertThrows(IllegalArgumentException.class,
-                () -> positionService.buy("APPL", 0, 100.0));
+                () -> positionService.buy("APPL", 0));
         assertThrows(IllegalArgumentException.class,
-                () -> positionService.buy("APPL", 10, -5.0));
+                () -> positionService.buy("APPL", 10));
     }
 
     @Test

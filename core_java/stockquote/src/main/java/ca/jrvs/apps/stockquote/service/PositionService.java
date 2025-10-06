@@ -24,20 +24,25 @@ public class PositionService {
      *
      * @param ticker
      * @param numberOfShares
-     * @param price
      * @return The position in our database after processing the buy
      */
 
-    public Position buy(String ticker, int numberOfShares, double price) {
+    public Position buy(String ticker, int numberOfShares) {
         if (ticker == null || ticker.isEmpty()) {
             throw new IllegalArgumentException("Ticker cannot be null or empty");
         }
-        if (numberOfShares <= 0) {
-            throw new IllegalArgumentException("Number of shares must be positive");
+
+        Optional<Quote> optionalQuote = quoteDao.findById(ticker);
+        if (optionalQuote.isEmpty()) {
+            throw new IllegalArgumentException("Ticker not found in the database.");
         }
-        if (price <= 0) {
-            throw new IllegalArgumentException("Price must be positive");
+
+        Quote quote = optionalQuote.get();
+
+        if (numberOfShares <= 0 || numberOfShares > quote.getVolume()) {
+            throw new IllegalArgumentException("Number of shares invalid");
         }
+        double price = quote.getPrice();
 
         // Fetch current position if it exists
         Optional<Position> existing = positionDao.findById(ticker);
