@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="411ab71d-7191-4617-8720-7cf9d077293e" name="Changes" comment="fixed test cases and added dockerfile">
-      <change afterPath="$PROJECT_DIR$/core_java/grep/src/main/java/ca/jrvs/apps/practice/RegexExc.java" afterDir="false" />
+    <list default="true" id="411ab71d-7191-4617-8720-7cf9d077293e" name="Changes" comment="added dockerfile">
+      <change afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/grep/JavaGrep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/grep/JavaGrepImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/grep/src/file1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/practice/RegexExc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/practice/RegexExcImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core_java/src/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarvis_data_eng_AshnaSamson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarvis_data_eng_AshnaSamson.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/grep/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/grep/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_java/grep/src/main/java/ca/jrvs/apps/practice/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/practice/HelloWorld.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,43 +64,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PositionDaoTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PositionDao_Test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PositionService_IntTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PositionService_IntTest.testBuyInvalidArgs.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuoteDao_Test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuoteServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuoteService_IntTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuoteService_UnitTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.service in core_java.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/rocky/dev/jarvis_data_eng_AshnaSamson&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.JavaGrepImplementation.executor": "Run",
+    "Application.Main.executor": "Run",
+    "JUnit.PositionDaoTest.executor": "Run",
+    "JUnit.PositionDao_Test.executor": "Run",
+    "JUnit.PositionService_IntTest.executor": "Run",
+    "JUnit.PositionService_IntTest.testBuyInvalidArgs.executor": "Run",
+    "JUnit.QuoteDao_Test.executor": "Run",
+    "JUnit.QuoteServiceTest.executor": "Run",
+    "JUnit.QuoteService_IntTest.executor": "Run",
+    "JUnit.QuoteService_UnitTest.executor": "Run",
+    "JUnit.service in core_java.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/rocky/dev/jarvis_data_eng_AshnaSamson",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\src\main\java\ca\jrvs\apps\grep\src" />
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\src" />
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java" />
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\grep" />
       <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\test\java\ca\jrvs\apps\stockquote\service" />
-      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\test\java\ca\jrvs\apps\stockquote\dao" />
-      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\main\java\ca\jrvs\apps\stockquote\controller" />
-      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\main\java\ca\jrvs\apps\stockquote\dao" />
-      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ca.jrvs.apps.stockquote.dao" />
@@ -98,7 +109,21 @@
       <recent name="ca.jrvs.apps.stockquote" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PositionService_IntTest.testBuyInvalidArgs">
+  <component name="RunManager" selected="Application.JavaGrepImplementation">
+    <configuration name="JavaGrepImplementation" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.grep.JavaGrepImplementation" />
+      <module name="jarvis_data_eng_AshnaSamson" />
+      <option name="PROGRAM_PARAMETERS" value=".*IllegalArgumentException.* ./grep/src ./grep/out/grep.out" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.grep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.stockquote.Main" />
       <module name="core_java" />
@@ -151,12 +176,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.JavaGrepImplementation" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.PositionService_IntTest" />
+      <item itemvalue="JUnit.PositionService_IntTest.testBuyInvalidArgs" />
+      <item itemvalue="JUnit.service in core_java" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PositionService_IntTest.testBuyInvalidArgs" />
         <item itemvalue="JUnit.PositionService_IntTest" />
         <item itemvalue="JUnit.service in core_java" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759718162063</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added dockerfile">
+      <option name="closed" value="true" />
+      <created>1760711017565</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760711017565</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +279,7 @@
     <MESSAGE value="implemented dao unit test cases" />
     <MESSAGE value="implemented all test cases including integration" />
     <MESSAGE value="fixed test cases and added dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed test cases and added dockerfile" />
+    <MESSAGE value="added dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dockerfile" />
   </component>
 </project>
