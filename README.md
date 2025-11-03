@@ -15,7 +15,12 @@ Motivated Computer Science undergraduate specializing in Software Engineering wi
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson](https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson)
 
 
-**Linux Cluster Monitoring Agent** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_AshnaSamson/tree/develop/linux_sql)]: Developed a monitoring agent to collect and analyze hardware specifications and real-time resource usage across multiple Linux nodes. Automated data collection and storage in a RDBMS PostgreSQL database using Bash scripts, Docker containers, and crontab for scheduled tracking (Bash, PostgreSQL, Docker, Git, Crontab).
+**Linux Cluster Monitoring Agent** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson/tree/develop/linux_sql)]: Developed a monitoring agent to collect and analyze hardware specifications and real-time resource usage across multiple Linux nodes. Automated data collection and storage in a RDBMS PostgreSQL database using Bash scripts, Docker containers, and crontab for scheduled tracking (Bash, PostgreSQL, Docker, Git, Crontab).
+
+**Java Stockquote App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson/tree/develop/core_java/stockquote)]: Built a Java-based stock wallet simulator using the Alpha Vantage API and PostgreSQL, featuring real-time quote retrieval, buy/sell transactions, and portfolio tracking. Implemented an MVC architecture with OkHttp Maven, JDBC, and SLF4J Logback for external configuration, API calls, and structured logging.
+
+**Java Grep App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson/tree/develop/core_java/src)]:
+Developed a Java-based text search tool that mimics Linux grep and recursively scans files using regex patterns, reads and writes datasets efficiently, and logs execution results.
 
 
 ## Highlighted Projects
@@ -28,7 +33,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_AshnaSamso
 
 ## Professional Experiences
 
-**Data Engineer, Jarvis (July 2025-present)**: Developing and deploying industry-level projects using Agile/Scrum methodologies, focusing on scalable data solutions and efficient project delivery.
+**Data Engineer & Java Developer, Jarvis (July 2025-present)**: Developing and deploying industry-level projects using Agile/Scrum methodologies, focusing on scalable data solutions and efficient project delivery.
 
 **Software Engineer: AI Training Data, Outlier.ai - Remote (May 2024-present)**: Develop and optimize AI training data pipelines to enhance model accuracy, data quality, and user experience in Python and Java.
 
