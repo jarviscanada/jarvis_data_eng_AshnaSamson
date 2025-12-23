@@ -19,6 +19,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_AshnaSamso
 
 **Java Stockquote App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson/tree/develop/core_java/stockquote)]: Built a Java-based stock wallet simulator using the Alpha Vantage API and PostgreSQL, featuring real-time quote retrieval, buy/sell transactions, and portfolio tracking. Implemented an MVC architecture with OkHttp Maven, JDBC, and SLF4J Logback for external configuration, API calls, and structured logging.
 
+**Java Springboot Trading App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson/tree/develop/springboot)]: Developed a stock trading simulation accessible via a REST API. The application follows a three-layer microservice architecture, managed using Maven, and leverages Spring Boot for dependency injection, testing (with Swagger UI), and its built-in Tomcat server. A PostgreSQL database is used for data storage through JDBC, which integrates real-time stock quotes fetched from the Alpha Vantage API.
+
 **Java Grep App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_AshnaSamson/tree/develop/core_java/src)]:
 Developed a Java-based text search tool that mimics Linux grep and recursively scans files using regex patterns, reads and writes datasets efficiently, and logs execution results.
 
