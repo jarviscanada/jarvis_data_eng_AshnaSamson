@@ -1,0 +1,16 @@
+market-data:
+  host: https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=%s&apikey=%s
+  token: c4ab4d07cemsh83cb82e76e49b53p18cb68jsn7c0c0b0bdb9d
+spring:
+  datasource:
+    url: jdbc:h2:mem:myDb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;NON_KEYWORDS=SIZE
+    driver-class-name: org.h2.Driver
+
+hibernate:
+  dialect: org.hibernate.dialect.H2Dialect
+  hbm2ddl:
+    auto: create
+
+app:
+  init:
+    dailyList: ashna

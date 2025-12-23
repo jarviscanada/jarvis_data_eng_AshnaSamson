@@ -4,19 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="411ab71d-7191-4617-8720-7cf9d077293e" name="Changes" comment="added dockerfile">
-      <change afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/grep/JavaGrep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/grep/JavaGrepImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/grep/src/file1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/practice/RegexExc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/practice/RegexExcImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core_java/src/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarvis_data_eng_AshnaSamson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarvis_data_eng_AshnaSamson.iml" afterDir="false" />
+    <list default="true" id="411ab71d-7191-4617-8720-7cf9d077293e" name="Changes" comment="added grep project and updated README file">
+      <change afterPath="$PROJECT_DIR$/springboot/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/config/DataSourceProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/config/MarketDataConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/controller/QuoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/controller/ResponseExceptionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/controller/TraderAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/dao/JdbcCrudDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/dao/MarketDataDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/dao/PositionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/dao/QuoteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/dao/SecurityOrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/dao/TraderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/dto/MarketOrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/model/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/model/domain/AlphaQuote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/model/domain/EntityModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/model/domain/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/model/domain/Quote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/model/domain/QuoteResponseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/model/domain/SecurityOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/model/domain/Trader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/model/view/TraderAccountView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/service/QuoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/service/TraderAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/java/ca/jrvs/apps/trading/TestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/java/ca/jrvs/apps/trading/TestDataSourceProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/java/ca/jrvs/apps/trading/dao/AccountDaoIntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/java/ca/jrvs/apps/trading/dao/PositionDaoIntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/java/ca/jrvs/apps/trading/dao/QuoteDaoIntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/java/ca/jrvs/apps/trading/dao/SecurityOrderDaoIntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/java/ca/jrvs/apps/trading/dao/TraderDaoIntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/trading-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_java/grep/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/src/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_java/grep/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_java/grep/src/main/java/ca/jrvs/apps/practice/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/core_java/src/main/java/ca/jrvs/apps/practice/HelloWorld.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,48 +103,64 @@
   "keyToString": {
     "Application.JavaGrepImplementation.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.SpringBootApp.executor": "Run",
+    "JUnit.AccountDaoIntTest.executor": "Run",
+    "JUnit.AccountDaoIntTest.saveAll.executor": "Run",
+    "JUnit.PositionDaoIntTest.executor": "Run",
+    "JUnit.PositionDaoIntTest.findAllByAccountId.executor": "Run",
     "JUnit.PositionDaoTest.executor": "Run",
     "JUnit.PositionDao_Test.executor": "Run",
     "JUnit.PositionService_IntTest.executor": "Run",
     "JUnit.PositionService_IntTest.testBuyInvalidArgs.executor": "Run",
+    "JUnit.QuoteDaoIntTest.executor": "Run",
+    "JUnit.QuoteDaoIntTest.testFindAll.executor": "Run",
+    "JUnit.QuoteDaoIntTest.testSave.executor": "Run",
+    "JUnit.QuoteDaoIntTest.testSaveAll.executor": "Run",
     "JUnit.QuoteDao_Test.executor": "Run",
     "JUnit.QuoteServiceTest.executor": "Run",
     "JUnit.QuoteService_IntTest.executor": "Run",
     "JUnit.QuoteService_UnitTest.executor": "Run",
+    "JUnit.SecurityOrderDaoIntTest.executor": "Run",
     "JUnit.service in core_java.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Ashna/IdeaProjects/jarvis_data_eng_AshnaSamson/springboot/src/test/java",
     "last_opened_file_path": "/home/rocky/dev/jarvis_data_eng_AshnaSamson",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\springboot\src\test\java" />
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\springboot\src\test\ca\jrvs\apps\trading" />
+      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\springboot\src\main\java\ca\jrvs\apps\trading" />
       <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\src\main\java\ca\jrvs\apps\grep\src" />
       <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\src" />
-      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java" />
-      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\grep" />
-      <recent name="C:\Users\Ashna\IdeaProjects\jarvis_data_eng_AshnaSamson\core_java\stockquote\src\test\java\ca\jrvs\apps\stockquote\service" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ca.jrvs.apps.trading.service" />
       <recent name="ca.jrvs.apps.stockquote.dao" />
       <recent name="ca.jrvs.apps.stockquote.service" />
       <recent name="ca.jrvs.apps.stockquote" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ca.jrvs.apps.trading" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.JavaGrepImplementation">
+  <component name="RunManager" selected="Application.SpringBootApp">
     <configuration name="JavaGrepImplementation" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.grep.JavaGrepImplementation" />
       <module name="jarvis_data_eng_AshnaSamson" />
@@ -124,71 +175,107 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.stockquote.Main" />
-      <module name="core_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.jrvs.apps.stockquote.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="SpringBootApp" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-22" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.trading.Application" />
+      <module name="trading-app" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionService_IntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core_java" />
+    <configuration name="AccountDaoIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trading-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.jrvs.apps.stockquote.service.*" />
+          <option name="PATTERN" value="ca.jrvs.apps.trading.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ca.jrvs.apps.stockquote.service" />
-      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.stockquote.service.PositionService_IntTest" />
+      <option name="PACKAGE_NAME" value="ca.jrvs.apps.trading.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.trading.dao.AccountDaoIntTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionService_IntTest.testBuyInvalidArgs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core_java" />
+    <configuration name="PositionDaoIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trading-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.jrvs.apps.stockquote.service.*" />
+          <option name="PATTERN" value="ca.jrvs.apps.trading.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ca.jrvs.apps.stockquote.service" />
-      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.stockquote.service.PositionService_IntTest" />
-      <option name="METHOD_NAME" value="testBuyInvalidArgs" />
+      <option name="PACKAGE_NAME" value="ca.jrvs.apps.trading.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.trading.dao.PositionDaoIntTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositionDaoIntTest.findAllByAccountId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trading-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.trading.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.jrvs.apps.trading.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.trading.dao.PositionDaoIntTest" />
+      <option name="METHOD_NAME" value="findAllByAccountId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="service in core_java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core_java" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/core_java/stockquote/src/test/java/ca/jrvs/apps/stockquote/service" />
+    <configuration name="QuoteDaoIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trading-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.trading.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.jrvs.apps.trading.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.trading.dao.QuoteDaoIntTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityOrderDaoIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trading-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.trading.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.jrvs.apps.trading.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.trading.dao.SecurityOrderDaoIntTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.JavaGrepImplementation" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.PositionService_IntTest" />
-      <item itemvalue="JUnit.PositionService_IntTest.testBuyInvalidArgs" />
-      <item itemvalue="JUnit.service in core_java" />
+      <item itemvalue="Application.SpringBootApp" />
+      <item itemvalue="JUnit.AccountDaoIntTest" />
+      <item itemvalue="JUnit.PositionDaoIntTest" />
+      <item itemvalue="JUnit.PositionDaoIntTest.findAllByAccountId" />
+      <item itemvalue="JUnit.QuoteDaoIntTest" />
+      <item itemvalue="JUnit.SecurityOrderDaoIntTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.PositionService_IntTest.testBuyInvalidArgs" />
-        <item itemvalue="JUnit.PositionService_IntTest" />
-        <item itemvalue="JUnit.service in core_java" />
+        <item itemvalue="JUnit.QuoteDaoIntTest" />
+        <item itemvalue="JUnit.SecurityOrderDaoIntTest" />
+        <item itemvalue="JUnit.AccountDaoIntTest" />
+        <item itemvalue="JUnit.PositionDaoIntTest.findAllByAccountId" />
+        <item itemvalue="JUnit.PositionDaoIntTest" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760711017565</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added grep project and updated README file">
+      <option name="closed" value="true" />
+      <created>1762139527693</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1762139527693</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +375,33 @@
     <MESSAGE value="implemented all test cases including integration" />
     <MESSAGE value="fixed test cases and added dockerfile" />
     <MESSAGE value="added dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dockerfile" />
+    <MESSAGE value="added grep project and updated README file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added grep project and updated README file" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/controller/QuoteController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/dao/MarketDataDao.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/ca/jrvs/apps/trading/dao/MarketDataDao.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core_java/stockquote/src/main/java/ca/jrvs/apps/stockquote/dto/QuoteResponse.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

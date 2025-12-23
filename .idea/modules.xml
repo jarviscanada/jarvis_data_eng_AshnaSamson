@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/jarvis_data_eng_AshnaSamson.iml" filepath="$PROJECT_DIR$/.idea/jarvis_data_eng_AshnaSamson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/trading-app.iml" filepath="$PROJECT_DIR$/springboot/trading-app.iml" />
     </modules>
   </component>
 </project>

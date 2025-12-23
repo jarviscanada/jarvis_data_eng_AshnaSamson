@@ -1,0 +1,26 @@
+market-data:
+  host: https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=%s&apikey=%s
+  token: c4ab4d07cemsh83cb82e76e49b53p18cb68jsn7c0c0b0bdb9d
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jrvstrading
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # Options: none, validate, update, create, create-drop
+    show-sql: true       # Logs SQL queries
+    properties:
+      hibernate:
+      format_sql: true
+      dialect: org.hibernate.dialect.PostgresSQLDialect
+
+app:
+  init:
+    dailyList: ashna
+
+logging:
+  level:
+    root: INFO
