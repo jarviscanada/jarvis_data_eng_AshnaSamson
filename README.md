@@ -4,11 +4,11 @@ Motivated Computer Science undergraduate specializing in Software Engineering wi
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, MATLAB, R/RStudio, C, Python, Figma, Adobe XD, draw.io, Verilog, RISC-V, Assembly, Arduino
+**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, MATLAB, R/RStudio, C, Python, Springboot, REST APIs, Figma, Adobe XD, draw.io, Verilog, RISC-V, Assembly, Arduino
 
-**Competent:** Docker, Junit, Eclipse, Google Cloud Platform, Azure, Kubernates, JavaScript, HTML, CSS, React.js, Node.js, Gradle
+**Competent:** Docker, Junit, Eclipse, Google Cloud Platform, Azure, PostgreSQL, Swagger UI, Postman, Kubernates, JavaScript, HTML, CSS, React.js, Node.js, Maven, Gradle
 
-**Familiar:** PostgreSQL, PowerBI, MongoDB, AWS, Photoshop, REST APIs
+**Familiar:** PowerBI, MongoDB, AWS, Photoshop
 
 ## Jarvis Projects
 
@@ -48,17 +48,7 @@ Developed a Java-based text search tool that mimics Linux grep and recursively s
 
 ## Education
 **York University - Lassonde School of Engineering (Graduate)**, Bachelor of Science, Computer Science -  Focus in Software Engineering
-- User Interfaces
-- Software Design
-- Software Engineering Requirements
-- Embedded Systems
-- Signals
-- Algorithms
-- Data Structures
-- Operating Systems
-- Digital Logic
-- Control Systems
-- Systems Refinement
+- Relevant Courses: User Interfaces, Software Design, Software Engineering Requirements, Embedded Systems, Signals, Algorithms, Data Structures, Operating Systems, Digital Logic, Control Systems, Systems Refinement
 
 
 ## Miscellaneous
