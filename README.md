@@ -1,12 +1,12 @@
 # Ashna Samson . Jarvis Consulting
 
-Motivated Computer Science undergraduate specializing in Software Engineering with a strong foundation in software development, AI model optimization, and UX/UI design. Proficient in Java, Linux, SQL, Python, Git, cloud technologies, and collaborative engineering practices applying agile methodologies. Experienced in developing user-centered applications, delivering high-quality code, and managing technical projects. Holds multiple professional certifications and completed advanced academic projects showcasing strong technical capabilities.
+Motivated Computer Science undergraduate specializing in Software Engineering with a strong foundation in software development, AI model optimization, DevOps, and UX/UI design. Proficient in Java, Linux, SQL, Python, Git, cloud technologies, Azure platform and collaborative engineering practices applying agile methodologies. Experienced in developing user-centered applications, delivering high-quality code, and managing technical projects. Holds multiple professional certifications and completed advanced academic projects showcasing strong technical capabilities.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, MATLAB, R/RStudio, C, Python, Springboot, REST APIs, Figma, Adobe XD, draw.io, Verilog, RISC-V, Assembly, Arduino
+**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git Deployment Workflow, Kubernates, Azure, Docker, MATLAB, R/RStudio, C, Python, Springboot, REST APIs, Figma, Adobe XD, draw.io, Verilog, RISC-V, Assembly, Arduino
 
-**Competent:** Docker, Junit, Eclipse, Google Cloud Platform, Azure, PostgreSQL, Swagger UI, Postman, Kubernates, JavaScript, HTML, CSS, React.js, Node.js, Maven, Gradle
+**Competent:** Junit, Eclipse, Google Cloud Platform, PostgreSQL, Swagger UI, Postman, JavaScript, HTML, CSS, React.js, Node.js, Maven, Gradle
 
 **Familiar:** PowerBI, MongoDB, AWS, Photoshop
 
@@ -35,7 +35,7 @@ Developed a Java-based text search tool that mimics Linux grep and recursively s
 
 ## Professional Experiences
 
-**Data Engineer & Java Developer, Jarvis (July 2025-present)**: Developing and deploying industry-level projects using Agile/Scrum methodologies, focusing on scalable data solutions and efficient project delivery.
+**Data Engineer & Developer, Jarvis (July 2025-present)**: Developing and deploying industry-level projects using Agile/Scrum methodologies, focusing on scalable data solutions and efficient project delivery.
 
 **Software Engineer: AI Training Data, Outlier.ai - Remote (May 2024-present)**: Develop and optimize AI training data pipelines to enhance model accuracy, data quality, and user experience in Python and Java.
 
@@ -43,7 +43,7 @@ Developed a Java-based text search tool that mimics Linux grep and recursively s
 
 **UX/UI Graphic Designer Intern, Tweebaa Inc. - Remote (Mar 2022-June 2022)**: Translated user research into actionable design solutions, improving product usability. Created wireframes, mockups, and journey maps to iterate on product concepts using Figma and CAD tools.
 
-**Assistant Centre Manager & Math Instructor, Mathnasium  The Math Learning Centre (Sept 2020-present)**: Managed daily operations, payroll, scheduling, and mentoring staff while ensuring high client satisfaction. Designed personalized learning plans, leveraging analytics to improve student performance. Utilized tools such as QuickBooks, Google Suite, Radius, and MS Office to streamline operations.
+**Assistant Centre Manager & Math Instructor, Mathnasium  The Math Learning Centre (Sept 2020-Feb 2026)**: Managed daily operations, payroll, scheduling, and mentoring staff while ensuring high client satisfaction. Designed personalized learning plans, leveraging analytics to improve student performance. Utilized tools such as QuickBooks, Google Suite, Radius, and MS Office to streamline operations.
 
 
 ## Education
@@ -56,5 +56,6 @@ Developed a Java-based text search tool that mimics Linux grep and recursively s
 - IBM DevOps, Cloud, and Agile Foundations Specialization - Coursera - [May 2023]
 - Google UX/UI Design Specialization - Coursera - [May 2023]
 - Meta Front-End Developer - Coursera - [Nov 2024]
+- Databricks Certified Generative AI Engineer Associate - [Enduring]
 - Data Engineer Associate [DP-203] - Microsoft - [Enduring]
 - Earned Certification Badges: Credly - https://www.credly.com/users/ashna-samson
