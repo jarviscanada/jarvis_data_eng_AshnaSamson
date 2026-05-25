@@ -1,10 +1,10 @@
 # Ashna Samson . Jarvis Consulting
 
-Motivated Computer Science undergraduate specializing in Software Engineering with a strong foundation in software development, AI model optimization, DevOps, CI/CD pipeline development, and UX/UI design. Proficient in Java, Linux, SQL, Python, Git, cloud technologies, the Azure platform and agile collaborative engineering practices. Experienced in developing user-centered applications, delivering high-quality code, and managing technical projects. Holds multiple professional certifications and completed advanced academic projects demonstrating strong technical capabilities.
+Motivated Computer Science undergraduate specializing in Software Engineering with a strong foundation in software development, AI/ML model optimization, DevOps, CI/CD pipeline development, and UX/UI design. Proficient in Java, Linux, SQL, Python, Git, cloud technologies, the Azure platform and agile collaborative engineering practices. Experienced in developing user-centered applications, delivering high-quality code, and managing technical projects. Holds multiple professional certifications and completed advanced academic projects demonstrating strong technical capabilities.
 
 ## Skills
 
-**Proficient:** Git Deployment Workflow Actions, Kubernates, Azure (AKS, APIM), CI/CD, Docker, Java, Linux/Bash, Putty, RDBMS/SQL, Agile/Scrum, MATLAB, R/RStudio, C, Python, Springboot, REST APIs, Figma, Adobe XD, draw.io, Verilog, RISC-V, Assembly, Arduino
+**Proficient:** Git Deployment Workflow Actions, Kubernates, Azure (AKS, APIM), CI/CD, Docker, AIML Infrastructure, Java, Linux/Bash, Putty, RDBMS/SQL, Agile/Scrum, MATLAB, R/RStudio, C, Python, Springboot, REST APIs, Figma, Adobe XD, draw.io, Verilog, RISC-V, Assembly, Arduino
 
 **Competent:** Junit, Eclipse, Google Cloud Platform, PostgreSQL, Swagger UI, Postman, JavaScript, HTML, CSS, React.js, Node.js, Maven, Gradle
 
