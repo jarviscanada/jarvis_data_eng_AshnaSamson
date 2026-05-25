@@ -36,7 +36,7 @@ Developed a Java-based text search tool that mimics Linux grep and recursively s
 ## Professional Experiences
 
 **Data Engineer & Developer, Jarvis (July 2025-present)**: Developing and deploying industry-level projects using Agile/Scrum methodologies, focusing on scalable data solutions and efficient project delivery.
-- Contributed to CI/CD workflows automating deployments to Azure Kubernetes Service (AKS) and Azure API Management using GitHub Actions. Supported containerized deployments with Docker by assisting with image testing, logging, and environment-specific configurations, while collaborating with senior engineers to troubleshoot and optimize deployment pipelines across development and production environments.
+Contributed to CI/CD workflows automating deployments to Azure Kubernetes Service (AKS) and Azure API Management using GitHub Actions. Supported containerized deployments with Docker by assisting with image testing, logging, and environment-specific configurations, while collaborating with senior engineers to troubleshoot and optimize deployment pipelines across development and production environments.
 
 **Software Engineer: AI Training Data, Outlier.ai - Remote (May 2024-present)**: Develop and optimize AI training data pipelines to enhance model accuracy, data quality, and user experience in Python and Java.
 
