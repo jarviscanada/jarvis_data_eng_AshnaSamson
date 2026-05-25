@@ -1,10 +1,10 @@
 # Ashna Samson . Jarvis Consulting
 
-Motivated Computer Science undergraduate specializing in Software Engineering with a strong foundation in software development, AI model optimization, DevOps, and UX/UI design. Proficient in Java, Linux, SQL, Python, Git, cloud technologies, Azure platform and collaborative engineering practices applying agile methodologies. Experienced in developing user-centered applications, delivering high-quality code, and managing technical projects. Holds multiple professional certifications and completed advanced academic projects showcasing strong technical capabilities.
+Motivated Computer Science undergraduate specializing in Software Engineering with a strong foundation in software development, AI model optimization, DevOps, CI/CD pipeline development, and UX/UI design. Proficient in Java, Linux, SQL, Python, Git, cloud technologies, the Azure platform and agile collaborative engineering practices. Experienced in developing user-centered applications, delivering high-quality code, and managing technical projects. Holds multiple professional certifications and completed advanced academic projects demonstrating strong technical capabilities.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git Deployment Workflow, Kubernates, Azure, Docker, MATLAB, R/RStudio, C, Python, Springboot, REST APIs, Figma, Adobe XD, draw.io, Verilog, RISC-V, Assembly, Arduino
+**Proficient:** Git Deployment Workflow Actions, Kubernates, Azure (AKS, APIM), CI/CD, Docker, Java, Linux/Bash, Putty, RDBMS/SQL, Agile/Scrum, MATLAB, R/RStudio, C, Python, Springboot, REST APIs, Figma, Adobe XD, draw.io, Verilog, RISC-V, Assembly, Arduino
 
 **Competent:** Junit, Eclipse, Google Cloud Platform, PostgreSQL, Swagger UI, Postman, JavaScript, HTML, CSS, React.js, Node.js, Maven, Gradle
 
@@ -36,6 +36,7 @@ Developed a Java-based text search tool that mimics Linux grep and recursively s
 ## Professional Experiences
 
 **Data Engineer & Developer, Jarvis (July 2025-present)**: Developing and deploying industry-level projects using Agile/Scrum methodologies, focusing on scalable data solutions and efficient project delivery.
+- Contributed to CI/CD workflows automating deployments to Azure Kubernetes Service (AKS) and Azure API Management using GitHub Actions. Supported containerized deployments with Docker by assisting with image testing, logging, and environment-specific configurations, while collaborating with senior engineers to troubleshoot and optimize deployment pipelines across development and production environments.
 
 **Software Engineer: AI Training Data, Outlier.ai - Remote (May 2024-present)**: Develop and optimize AI training data pipelines to enhance model accuracy, data quality, and user experience in Python and Java.
 
